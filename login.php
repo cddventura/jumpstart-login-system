@@ -14,12 +14,13 @@
     <![endif]-->
   </head>
   <body>
-    <div class = "center-block">
-    <img src = "img/logo.png">
+    <br>
+    <div class = "col-md-offset-4">
+    <img src = "img/logo.png" height="200" width="465">
     </div>
     <div id="wrapper" class="container">
       <div class="row">
-        <div id="register" class="col-md-4">
+        <div id="register" class="col-md-offset-4 col-md-4">
           <h1 id="registration">Registration</h1>
           <form id="form" action="submit.php" method="post">
             <div class="form-group">
