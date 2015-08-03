@@ -19,53 +19,53 @@
         <div class="col-md-offset-3 col-md-6" id="loginarea">
           <img src="img/misa.png" id="misalogo"/>
 
-          <form class="form-horizontal formz" role="form" method="post">
-            <div class="form-group">               
+          <form class="form-horizontal formz" role="form" method="post" action="index.php">
+            <div class="form-group">
               <div class="col-md-8 col-md-offset-2">
               <input type="text" class="form-control col-md-2" id="inputLogin" name="login" required="true">
               <p class="loginp">USERNAME</p>
               </div>
-            </div>   
+            </div>
 
-            <div class="form-group">               
+            <div class="form-group">
               <div class="col-md-8 col-md-offset-2">
               <input type="password" class="form-control col-md-2" id="inputPassword" name="password" required="true">
               <p class="loginp">PASSWORD</p>
               </div>
-            </div>           
-            
+            </div>
+
             <div class="form-group">
               <div class="col-sm-2 col-md-2 col-lg-2"></div>
               <button type="submit" class="btn btn-default col-xs-12 col-sm-8 col-md-8 col-lg-8 input-lg" id="loginButton" name="loginbutton">LOGIN</button>
               <div class="col-sm-2 col-md-2 col-lg-2">
-            </div>            
+            </div>
 
-            
-         </form> 
-        
+
+         </form>
+
 
         </div>
         <div class="row bottom">
             <img src="img/eservs.png" alt="eServices logo" id="eservslogo" align="middle">
             <h6 class="text-center">Ateneo Management Information Systems Association. All Rights Reserved.</h6>
-      </div> 
-      </div>  
-          
+      </div>
+      </div>
+
     </div>
 
     <?php
-      if ($_POST) {
+      session_start();
+      if (isset($_POST['login']) || isset($_POST['password'])) {
         $login = $_POST['login'];
         $password = $_POST['password'];
-        
-        $hash = "root";
+
         if (($password == "root") && ($login == "root")) {
           header("Location: login.php");
         }
         else {
           echo '<script> alert("Invalid credentials!"); </script>';
           exit;
-        }   
+        }
       }
     ?>
 
