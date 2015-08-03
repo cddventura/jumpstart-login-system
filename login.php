@@ -26,12 +26,12 @@
             </div>
             <div class="form-group">
               <label for="full_name">Full Name</label>
-              <input type="text" class="form-control" id="full_name" name="full_name" maxlength="64" autocomplete="off" placeholder="Ted Mosby" required>
+              <input type="text" class="form-control" id="name" name="full_name" maxlength="64" autocomplete="off" placeholder="Ted Mosby" required>
               <p id="name_warning" class="warning">Please input a name.</p>
             </div>
             <div class="form-group">
               <label for="cellphone_number">Cellphone Number</label>
-              <input type="number" class="form-control" id="cellphone_number" name="cellphone_number" min="09000000000" max="09999999999" autocomplete="off" placeholder="09171234123" required>
+              <input type="number" class="form-control" id="course" name="cellphone_number" min="09000000000" max="09999999999" autocomplete="off" placeholder="09171234123" required>
               <p id="cell_warning" class="warning">Please input a valid cellphone number.</p>
             </div>
 
