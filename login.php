@@ -45,10 +45,7 @@
             </div>
           </div>
         </div>';
-        if(connection_aborted())
-        {
-          unset($_SESSION['valid_user']);
-        }
+        unset($_SESSION['valid_user']);
       }
       else
       {
