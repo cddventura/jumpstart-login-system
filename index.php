@@ -86,7 +86,7 @@
       }
       else
       {
-        echo '<script> aler("Input username/password"); </script>';
+        echo '<script> alert("Input username/password"); </script>';
       }
     ?>
 
