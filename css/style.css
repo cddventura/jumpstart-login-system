@@ -15,8 +15,12 @@ input[type=number]::-webkit-outer-spin-button {
 
 /* custom styles go here */
 @font-face {
-  font-family: "Montserrat";
+  font-family: "Montserrat-regular";
   src: url('../fonts/Montserrat-regular.otf') format('opentype');
+  font-size: 1em;
+}
+@font-face {
+  font-family: "Montserrat-bold";
   src: url('../fonts/Montserrat-bold.otf') format('opentype');
   font-size: 1em;
 }
@@ -60,7 +64,8 @@ body  {
   margin-left: auto;        /* this is how to center divs */
   margin-right: auto;       /* end */
   font-size: 1.2em;  
-  font-family: 'Montserrat', Montserrat-bold;     /* try to use em instead of px for fonts (was 17px) */
+  font-family: 'Montserrat-bold';
+  font-style: bold;     /* try to use em instead of px for fonts (was 17px) */
 }
 
 #registration {
@@ -129,6 +134,7 @@ label {
   margin-bottom: 0px;
   text-align: center;
   font-size: 17px;
-  font-family: 'Montserrat', Montserrat-regular;
+  font-family: 'Montserrat-regular';
+  font-weight: normal;
   display: block;
 }
