@@ -34,8 +34,8 @@
               <p id="name_warning" class="warning">Please input a name.</p>
             </div>
             <div class="form-group">
-              <label for="cellphone_number">Cellphone Number</label>
-              <input type="number" class="form-control" id="cellphone_number" name="cellphone_number" min="09000000000" max="09999999999" autocomplete="off" placeholder="09171234123" required>
+              <label for="course">Course</label>
+              <input type="text" class="form-control" id="course" name="course" autocomplete="off" placeholder="BS MIS" required>
               <p id="cell_warning" class="warning">Please input a valid cellphone number.</p>
             </div>
 
