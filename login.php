@@ -21,25 +21,20 @@
     <div id="wrapper" class="container">
       <div class="row">
         <div id="register" class="col-md-offset-4 col-md-4">
-          <h1 id="registration">Registration</h1>
+          <div class= "col-md-offset-3">
+          <img src = "img\MISA.png" height= "60" width= "200">
+          </div>
           <form id="form" action="submit.php" method="post">
-            <div class="form-group">
-              <label for="id_number">ID Number</label>
+            <div class="row">
+              <div class="col-md-4">
+               <label for="id_number">ID NUMBER</label>
+              </div>
+              <div class="col-md-8">
               <input type="number" class="form-control" id="id_number" name="id_number" min="110000" max="160000" autocomplete="off" placeholder="101010" required>
               <p id="idnumber_warning" class="warning">Please input a valid ID Number.</p>
-            </div>
-            <div class="form-group">
-              <label for="full_name">Full Name</label>
-              <input type="text" class="form-control" id="full_name" name="full_name" maxlength="64" autocomplete="off" placeholder="Ted Mosby" required>
-              <p id="name_warning" class="warning">Please input a name.</p>
-            </div>
-            <div class="form-group">
-              <label for="course">Course</label>
-              <input type="text" class="form-control" id="course" name="course" autocomplete="off" placeholder="BS MIS" required>
-              <p id="cell_warning" class="warning">Please input a valid cellphone number.</p>
-            </div>
-
-            <button type="submit" id="submit" class="btn">Challenge Accepted!</button>
+              </div>
+            </div> 
+            <button type="submit" id="submit" class="btn">Sign in</button>
           </form>
         </div>
       </div>
