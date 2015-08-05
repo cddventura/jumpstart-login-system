@@ -15,9 +15,10 @@ input[type=number]::-webkit-outer-spin-button {
 
 /* custom styles go here */
 @font-face {
-  font-family: "dax";
-  src: url('../fonts/dax_regular.ttf') format('truetype');
-  font-size: 2em;
+  font-family: "Montserrat";
+  src: url('../fonts/Montserrat-regular.otf') format('opentype');
+  src: url('../fonts/Montserrat-bold.otf') format('opentype');
+  font-size: 1em;
 }
 
 * {
@@ -26,8 +27,7 @@ input[type=number]::-webkit-outer-spin-button {
 
 #register {
   background-color: rgb(168,168,168); /* RGBA(242,101,34,0.2) #73accd */
-  border-radius: 2em;
-  margin-top: 20px;
+  border-radius: 1em;
   padding-top: 0.5%;
   padding-bottom: 1.5%;
   /* margin-left: 55%; please use bootstrap's grid system for alignment
@@ -59,7 +59,8 @@ body  {
   margin-top: auto;
   margin-left: auto;        /* this is how to center divs */
   margin-right: auto;       /* end */
-  font-size: 1.2em;       /* try to use em instead of px for fonts (was 17px) */
+  font-size: 1.2em;  
+  font-family: 'Montserrat', Montserrat-bold;     /* try to use em instead of px for fonts (was 17px) */
 }
 
 #registration {
@@ -127,6 +128,7 @@ label {
   margin-top: 9px;
   margin-bottom: 0px;
   text-align: center;
-  font-size: 20px;
+  font-size: 17px;
+  font-family: 'Montserrat', Montserrat-regular;
   display: block;
 }

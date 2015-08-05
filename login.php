@@ -26,15 +26,15 @@
           </div>
           <form id="form" action="submit.php" method="post">
             <div class="row">
-              <div class="col-md-4">
+              <div class="col-md-5">
                <label for="id_number">ID NUMBER</label>
               </div>
-              <div class="col-md-8">
+              <div class="col-md-7">
               <input type="number" class="form-control" id="id_number" name="id_number" min="110000" max="160000" autocomplete="off" placeholder="101010" required>
               <p id="idnumber_warning" class="warning">Please input a valid ID Number.</p>
               </div>
             </div> 
-            <button type="submit" id="submit" class="btn">Sign in</button>
+            <button type="submit" id="submit" class="btn">ENTER</button>
           </form>
         </div>
       </div>
