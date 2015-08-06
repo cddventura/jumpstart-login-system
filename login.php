@@ -42,10 +42,10 @@
 
                 <button type="submit" id="submit" class="btn">Challenge Accepted!</button>
               </form>
+              <a href="logout.php">Log out</a>
             </div>
           </div>
         </div>';
-        unset($_SESSION['valid_user']);
       }
       else
       {
