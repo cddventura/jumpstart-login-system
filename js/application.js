@@ -4,7 +4,7 @@ $(document).ready(function() {
 
   var course;
   var name;
-
+  var id_number;
   $('#id_number').keyup(function() {
     var textbox = $(this);
     var value = textbox.val();
@@ -12,7 +12,7 @@ $(document).ready(function() {
     var max = textbox.attr('max'); // attribute value of <input name="id_number">
     var length = value.toString().length;
 
-    
+
 
     if(length === 6 && value >= min && value <= max) {
       $.ajax({
@@ -23,15 +23,16 @@ $(document).ready(function() {
         success: function(student) {
           name = student.full_name;
           course = student.course;
+          id_number = student.id;
         }
       });
-      
+
     } else {
       $('#full_name').val("");
       $('#cellphone_number').val("");
     }
   });
-  
+
   $('#submit').click(function(evee) {
     var form = $('#form');
 
@@ -49,18 +50,19 @@ $(document).ready(function() {
       $.ajax({
         method: form.attr('method'),
         url: form.attr('action'),
-        data: {'id': try_id , 'name': name, 'course': course},
+        data: {'id': id_number, 'name': name, 'course': course},
+        //dataType: 'json',
         async: false,
-        success: function(data) { 
-            if (data === false) {
-              alert("Student has already logged in.");
-              location.reload(); 
-            } 
-            else {        
+        success: function(student) {
+            if (name === undefined) {
+              alert("Student does not exist.");
+              location.reload();
+            }
+            else {
               alert('Name: ' + name + '\nCourse: ' + course);
-              location.reload(); 
-            }           
-          }        
+              location.reload();
+            }
+          }
 
       });
       evee.preventDefault();
