@@ -26,7 +26,7 @@
         </div>
         <div id="wrapper" class="container">
           <div class="row">
-            <div id="register" class="col-md-offset-7 col-md-4">
+            <div id="register" class="col-md-offset-4 col-md-4">
               <div class= "col-md-offset-3">
                 <img src = "img\MISA.png" height= "60" width= "200">
               </div>
