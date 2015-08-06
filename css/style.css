@@ -15,9 +15,14 @@ input[type=number]::-webkit-outer-spin-button {
 
 /* custom styles go here */
 @font-face {
-  font-family: "dax";
-  src: url('../fonts/dax_regular.ttf') format('truetype');
-  font-size: 2em;
+  font-family: "Montserrat-regular";
+  src: url('../fonts/Montserrat-regular.otf') format('opentype');
+  font-size: 1em;
+}
+@font-face {
+  font-family: "Montserrat-bold";
+  src: url('../fonts/Montserrat-bold.otf') format('opentype');
+  font-size: 1em;
 }
 
 * {
@@ -25,9 +30,8 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 #register {
-  background-color: rgba(246, 255, 102, 0.86); /* RGBA(242,101,34,0.2) #73accd */
-  border-radius: 2em;
-  margin-top: 20px;
+  background-color: rgb(168,168,168); /* RGBA(242,101,34,0.2) #73accd */
+  border-radius: 1em;
   padding-top: 0.5%;
   padding-bottom: 1.5%;
   /* margin-left: 55%; please use bootstrap's grid system for alignment
@@ -39,7 +43,7 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 body  {
-  background: url(../img/house.jpg)no-repeat center center fixed;
+  background: url(../img/background.jpg)no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -53,12 +57,15 @@ body  {
 
 .btn {
   color: #FFF;
-  background-color: #CC418A;
+  background-color: #505050;
   display: block;           /* start */
+  margin: auto;
+  margin-top: auto;
   margin-left: auto;        /* this is how to center divs */
   margin-right: auto;       /* end */
-  border-radius: 28px;
-  font-size: 1.2em;       /* try to use em instead of px for fonts (was 17px) */
+  font-size: 1.2em;  
+  font-family: 'Montserrat-bold';
+  font-style: bold;     /* try to use em instead of px for fonts (was 17px) */
 }
 
 #registration {
@@ -105,6 +112,7 @@ body  {
 
 input {
   margin-top: 6px;
+  margin-bottom: 0px;
   
 }
 
@@ -121,6 +129,12 @@ p.warning {
 }
 
 label {
+  color: #FFF;
+  margin-top: 9px;
+  margin-bottom: 0px;
   text-align: center;
+  font-size: 17px;
+  font-family: 'Montserrat-regular';
+  font-weight: normal;
   display: block;
 }
