@@ -20,7 +20,7 @@
       if(isset($_SESSION['valid_user']))
       {
         echo '
-        <br>
+        <a href="logout.php" class="log-out">LOG OUT</a>
         <div class = "col-md-offset-4">
           <img src = "img/logo.png" height="200" width="465">
         </div>
@@ -44,7 +44,7 @@
                 <input type="hidden" class="form-control" id="course" name="cellphone_number" min="09000000000" max="09999999999" autocomplete="off" placeholder="09171234123" required>
                 <button type="submit" id="submit" class="btn">ENTER</button>
               </form>
-              <a href="logout.php">Log out</a>
+              
             </div>
           </div>
         </div>';
