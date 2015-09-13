@@ -2,9 +2,9 @@
 $(document).ready(function() {
   $('.warning').css('visibility','hidden');
 
-  var course;
   var name;
   var id_number;
+  var group;
   $('#id_number').keyup(function() {
     var textbox = $(this);
     var value = textbox.val();
@@ -22,8 +22,8 @@ $(document).ready(function() {
         dataType: 'json',
         success: function(student) {
           name = student.full_name;
-          course = student.course;
           id_number = student.id;
+          group = student.group;
         }
       });
 
@@ -50,7 +50,7 @@ $(document).ready(function() {
       $.ajax({
         method: form.attr('method'),
         url: form.attr('action'),
-        data: {'id': id_number, 'name': name, 'course': course},
+        data: {'id': id_number, 'name': name, 'course': course, 'group': group},
         //dataType: 'json',
         async: false,
         success: function(student) {
@@ -59,7 +59,7 @@ $(document).ready(function() {
               location.reload();
             }
             else {
-              alert('Name: ' + name + '\nCourse: ' + course);
+              alert('Name: ' + name + '\nCourse: ' + course + '\nGroup' + group);
               location.reload();
             }
           }

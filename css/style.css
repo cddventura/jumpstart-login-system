@@ -48,6 +48,18 @@ body  {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  border: 10px solid white;
+  height: 100vh;
+}
+
+.log-out {
+  text-align: right;
+  font-family: "Montserrat-regular";
+  color: white;
+  display: block;
+  margin-top: 10px;
+  margin-right: 40px;
+  font-size: 1.2em;
 }
 
 #login {
